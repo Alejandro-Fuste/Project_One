@@ -22,7 +22,7 @@ body {
 	width: 100%;
 	height: 80vh;
 	position: relative;
-	margin: 20% auto 0;
+	margin: 11% auto 0;
 	text-align: center;
 	/* z-index: 4; */
 }
@@ -73,7 +73,7 @@ body {
 }
 #closeForm{
 	float: right;
-	margin-top: -35px;
+	margin-top: -8px;
 	color: #26a69a;
 }
 
@@ -100,6 +100,10 @@ h1 {
 	display: block;
 	display: inline-block;
 	text-align: left;
+}
+
+#search-header{
+	margin-top: 1px;
 }
 
 .translucent-form-overlay .columns.row {

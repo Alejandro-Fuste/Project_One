@@ -13,3 +13,5 @@ closeForm.on('click', function() {
 	searchForm.hide();
 	searchButton.show();
 });
+
+$('.carousel').carousel()
