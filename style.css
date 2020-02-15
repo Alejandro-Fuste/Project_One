@@ -71,7 +71,7 @@ body {
 	color: lightgreen;
 	padding-left: 25px;
 }
-#closeForm{
+#closeForm {
 	float: right;
 	margin-top: -35px;
 	color: #26a69a;
@@ -129,3 +129,9 @@ h1 {
 }
 
 /* ===================================== */
+
+/* card  */
+
+.card.large {
+	background-color: rgb(41, 36, 36, 0.5);
+}
