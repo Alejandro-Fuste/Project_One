@@ -3,6 +3,7 @@
 
 <head>
 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,15 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Odibee+Sans|Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 
 </head>
 
 <body>
-
 
     <header>
         <h1 class="headerTitle">LocalWire</h1>
@@ -28,67 +27,60 @@
     <!-- <div id="overlay"></div> -->
 
     <div class="container">    
-      <button type="submit" id="searchBtn" style="display: none;">Where to?<span><i class="fas fa-chevron-down" id="down-arrow"></i></span></button>
+      <button type="submit" id="searchBtn">Search<span><i class="fas fa-chevron-down" id="down-arrow"></i></span></button>
       
-        <div id="searchForm" class="translucent-form-overlay" style="display: none;">
-            <form>
-              <i id="closeForm" class="far fa-window-close"></i>
-              <h3>Search</h3>
-              <div class="row columns">
-                <label>City:
-                  <input type="text" name="keyword" placeholder="Enter City" id="city-search">
-                </label>
-              </div>
 
-              <div class="row">
-                <label class="columns small-12">Start Date</label>
-                <div class="columns small-6">
-                  <input type="date" id="start-date" placeholder="Start Date">
-                </div>
-                <div class="row">
-                    <label class="columns small-12">End Date</label>
-                    <div class="columns small-6">
-                      <input type="date" id="end-date" placeholder="End Date">
-                    </div>
+     <!--SEARCH FORM BOX--> 
+      <div id="searchForm" class="translucent-form-overlay" style="display: none;">
+        <form>
+          <i id="closeForm" class="far fa-window-close"></i>
+          <h3>Search</h3>
+          <div class="row columns">
+            <label>City:
+              <input type="text" name="keyword" placeholder="Enter City" id="city-search">
+            </label>
+          </div>
 
 
-              </div>
-              <button type="button" class="waves-effect waves-light btn" id="search-button">
-                Search
-              </button>
-          </form>
-        </div>
+        <div class="row">
+          <label class="columns small-12">Start Date</label>
+          <div class="columns small-6">
+            <input type="date" id="start-date" placeholder="Start Date">
+          </div>
+          <div class="row">
+            <label class="columns small-12">End Date</label>
+            <div class="columns small-6">
+              <input type="date" id="end-date" placeholder="End Date">
+            </div>
 
-       
-  
+          </div>
+          <button type="submit" class="waves-effect waves-light btn" id="search-button">
+            Search
+          </button>
+      </form>
     </div>
+  </div>
+  <br>
 
-    <div class="card large">
-      <!-- Card Content -->
-      <div class="carousel carousel-slider center">
-        <div class="carousel-fixed-item center">
-          <a class="btn waves-effect white grey-text darken-text-2">button</a>
-        </div>
-        <div class="carousel-item red white-text" href="#one!">
-          <h2>First Panel</h2>
-          <p class="white-text">This is your first panel</p>
-        </div>
-        <div class="carousel-item amber white-text" href="#two!">
-          <h2>Second Panel</h2>
-          <p class="white-text">This is your second panel</p>
-        </div>
-        <div class="carousel-item green white-text" href="#three!">
-          <h2>Third Panel</h2>
-          <p class="white-text">This is your third panel</p>
-        </div>
-        <div class="carousel-item blue white-text" href="#four!">
-          <h2>Fourth Panel</h2>
-          <p class="white-text">This is your fourth panel</p>
-        </div>
-      </div>
-    </div>
+  <br><h2>Local Breweries</h2>
+  <hr>
+  <div class="brew-display">
+  </div>
+  <br>
 
-      
+  <h2>Local Restaurants</h2>
+  <hr>
+  <div class="rest-display">
+  </div>
+  <br>
+
+  <h2>Local Events</h2>
+  <hr>
+  <div class="event-display">
+  </div>
+
+
+     
       
     <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
 
